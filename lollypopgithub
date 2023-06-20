@@ -1,0 +1,671 @@
+-- ORION LOLLYPOP FM
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "🍭 Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+-- SKRIPTS 
+local SkriptsTab = Window:MakeTab({
+    Name = "Skripts",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+  })
+local Section = SkriptsTab:AddSection({
+    Name = "Skript Hub by lulaslollipop🍭😋"
+})
+SkriptsTab:AddButton({
+    Name = "99% fail impossible obby",
+    Callback = function()
+-- memory skript by 𝗹𝘂𝗹𝗮𝘀𝗹𝗼𝗹𝗹𝗶𝗽𝗼𝗽#0140
+loadstring(game:HttpGet(('https://pastebin.com/raw/DhLMep63'),true))()
+      end    
+})
+SkriptsTab:AddButton({
+    Name = "Mobile Fly GUI V3",
+    Callback = function()loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-FLY-GUI-V3-8402"))()
+    end
+})
+SkriptsTab:AddButton({
+    Name = "Infinite Sprint (99% fail)",
+    Callback = function()loadstring(game:HttpGet("https://pastebin.com/raw/R5YR13pG"))()
+    end
+})
+local Section = SkriptsTab:AddSection({
+    Name = "Anti-lag"
+})
+    
+SkriptsTab:AddButton({
+    Name = "Remove Textures",
+    Callback = function()-- anti lag
+loadstring(game:HttpGet("https://pastebin.com/raw/RW7ZT29m"))()
+   end
+})
+local Section = SkriptsTab:AddSection({
+    Name = "[🍭] Godmode (press Z to toggle)"
+})
+SkriptsTab:AddButton({
+    Name = "GodMode (99% fail)",
+    Callback = function()loadstring(game:HttpGet("https://pastebin.com/raw/6g3h9cDB"))()
+    end
+})
+local Section = SkriptsTab:AddSection({
+    Name = "Mobile Keyboard"
+})
+SkriptsTab:AddButton({
+    Name = "press",
+    Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+    end
+})
+-- ADMIN SKRIPTS
+local AdminTab = Window:MakeTab({
+    Name = "Admin",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+  })
+local Section = AdminTab:AddSection({
+    Name = "Admin Kommands"
+})
+AdminTab:AddButton({
+    Name = "Infinite Yield",
+    Callback = function()loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+    end
+})
+AdminTab:AddButton({
+    Name = "Fates Admin",
+    Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))()
+    end
+})
+local Section = AdminTab:AddSection({
+    Name = "Bonus😁"
+})
+AdminTab:AddButton({
+    Name = "Nameless Admin(type ;cmds)",
+    Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source"))();
+    end
+})
+-- Fun Skripts
+local FunTab = Window:MakeTab({
+    Name = "Fun",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+  })
+FunTab:AddButton({
+    Name = "FE Portal Gun",
+    Callback = function()loadstring(game:HttpGet("https://pastebin.com/raw/H9B4aGij"))()
+    end
+})
+local Section = FunTab:AddSection({
+    Name = "Animations" 
+})
+FunTab:AddButton({
+    Name = "Lolly Animations (R6 only)",
+    Callback = function()loadstring(game:HttpGet('https://raw.githubusercontent.com/yeerma/1/main/the_greatest_script_ever_made'))()
+    end
+})
+local Section = FunTab:AddSection({
+    Name = "Xhat"
+})
+FunTab:AddButton({
+    Name = "Xhat Troller",
+    Callback = function()loadstring(game:HttpGet('https://pastebin.com/raw/MBpnp3yS'))()
+    end
+})
+FunTab:AddButton({
+    Name = "Message On Death (kills u first)",
+    Callback = function()loadstring(game:HttpGet("https://pastebin.com/raw/NNZZPm5c"))()
+    end
+})
+FunTab:AddButton({
+    Name = "RAINBOW XHAT (enables xhat bubbles too)",
+    Callback = function()--enables bubble chat also
+textcolour = Color3.new(0,0,0)
+game:GetService("Chat").BubbleChatEnabled = true
+coroutine.wrap(function()
+    while wait() do
+        for i = 0,255,10 do
+            textcolour = Color3.new(255/255,i/255,0/255)
+            wait()
+        end
+        for i = 255,0,-10 do
+            textcolour = Color3.new(i/255,255/255,0/255)
+            wait()
+        end
+        for i = 0,255,10 do
+            textcolour = Color3.new(0/255,255/255,i/255)
+            wait()
+        end
+        for i = 255,0,-10 do
+            textcolour = Color3.new(0/255,i/255,255/255)
+            wait()
+        end
+        for i = 0,255,10 do
+            textcolour = Color3.new(i/255,0/255,255/255)
+            wait()
+        end
+        for i = 255,0,-10 do
+            textcolour = Color3.new(255/255,0/255,i/255)
+            wait()
+        end
+    end
+end)()
+local settings = {
+    
+}
+while wait() do
+    pcall(function()
+        game:GetService("Chat"):SetBubbleChatSettings({
+            TextColor3 = textcolour,
+            -- The amount of time, in seconds, to wait before a bubble fades out.
+            BubbleDuration = 20,
+            -- The amount of messages to be displayed, before old ones disappear
+            -- immediately when a new message comes in.
+            MaxBubbles = 25,
+            -- Styling for the bubbles. These settings will change various visual aspects.
+            BackgroundColor3 = Color3.fromRGB(0, 0, 0),
+            TextSize = 16,
+            Font = Enum.Font.Ubuntu, --Enum.Font.GothamSemibold
+            Transparency = .1,
+            CornerRadius = UDim.new(0, 30),
+            TailVisible = true,
+            Padding = 8, -- in pixels
+            MaxWidth = 500, --in pixels
+            -- Extra space between the head and the billboard (useful if you want to
+            -- leave some space for other character billboard UIs)
+            VerticalStudsOffset = 0,
+        
+            -- Space in pixels between two bubbles original is 3
+            BubblesSpacing = 7,
+        
+            -- The distance (from the camera) that bubbles turn into a single bubble
+            -- with ellipses (...) to indicate chatter. 250 original
+            MinimizeDistance = 500,
+            -- The max distance (from the camera) that bubbles are shown at
+            MaxDistance = 2000,
+        })
+    end)
+end
+    end
+})
+local Section = FunTab:AddSection({
+    Name = "Humanoid Funktions"
+})
+FunTab:AddButton({
+    Name = "Destroy Body",
+    Callback = function()-- destroy body
+loadstring(game:HttpGet("https://pastebin.com/raw/naRUdxrc", true))()
+    end
+})
+-- Tools
+local ToolsTab = Window:MakeTab({
+    Name = "Tools",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+local Section = ToolsTab:AddSection({
+    Name = "Tools"
+})
+ToolsTab:AddButton({
+    Name = "BTools",
+    Callback = function()
+              a = Instance.new("HopperBin", game.Players.LocalPlayer.Backpack)
+a.BinType = 2
+b = Instance.new("HopperBin", game.Players.LocalPlayer.Backpack)
+b.BinType = 3
+c = Instance.new("HopperBin", game.Players.LocalPlayer.Backpack)
+c.BinType = 4
+      end    
+})
+ToolsTab:AddButton({
+    Name = "Super Tools",
+    Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/0Ben1/fe/main/Super%20tools"))()
+      end
+})
+ToolsTab:AddButton({
+    Name = "Tp Tool",
+    Callback = function()
+mouse = game.Players.LocalPlayer:GetMouse()
+tool = Instance.new("Tool")
+tool.RequiresHandle = false
+tool.Name = "Equip to Click TP"
+tool.Activated:connect(function()
+local pos = mouse.Hit+Vector3.new(0,2.5,0)
+pos = CFrame.new(pos.X,pos.Y,pos.Z)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
+end)
+tool.Parent = game.Players.LocalPlayer.Backpack
+      end
+})
+ToolsTab:AddButton({
+    Name = "Tp To Player (type user,doesnt have to be full user)",
+    Callback = function()
+loadstring(game:HttpGet(("https://pastebin.com/raw/YNVbeqPy")))()
+      end
+})
+-- HUBS & GUIS
+local HubsTab = Window:MakeTab({
+    Name = "HUBS & GUIS",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+HubsTab:AddButton({
+    Name = "ASTRAL HUB V3",
+    Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Vcsk/AstralHub/main/Main.lua", true))()
+      end
+})
+HubsTab:AddButton({
+    Name = "Harsh Texh v7.4",
+    Callback = function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/YellowGreg/HarshTech7.4-Beta/main/HarshTech7.4.lua'),true))()
+      end
+})
+HubsTab:AddButton({
+    Name = "Skript Loader Hub (huge GUI)",
+    Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/zzYSdwhk", true))()
+      end
+})
+-- GAMES
+local GamesTab = Window:MakeTab({
+    Name = "Games",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+GamesTab:AddButton({
+    Name = "T-TITANS BATTLEGROUNDS",
+    Callback = function()
+pcall(function()
+  loadstring(game:HttpGet("https://roflux.net/scripts/games/" .. tostring(game.PlaceId) .. ".lua"))()
+end)
+      end
+})
+GamesTab:AddButton({
+    Name = "Rainbow Friends",
+    Callback = function()loadstring(game:HttpGet('https://raw.githubusercontent.com/Ihaveash0rtnamefordiscord/BorkWare/main/Scripts/' .. game.GameId .. ".lua"))(' Watermelon ? ')
+    end
+})
+GamesTab:AddButton({
+    Name = "Shadow Boxing Battles",
+    Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/main/ShadowBoxing"))()
+    end
+})
+GamesTab:AddButton({
+    Name = "Find The Markers",
+    Callback = function()loadstring(game:HttpGet('https://pastebin.com/raw/7gu2ztpP'))()
+    end
+})
+GamesTab:AddButton({
+    Name = "50/50 Pixk A Door by me",
+    Callback = function()getgenv().Door = true
+while wait() do
+    if getgenv().Door == true then
+        for i,v in pairs(game.Workspace.Doors:GetChildren()) do
+            for i,l in pairs(v:GetChildren()) do
+                if l:FindFirstChild("???") then
+                    l.BrickColor = BrickColor.new("Lime green")
+                end
+            end
+        end
+    end
+end
+    end
+})
+OrionLib:MakeNotification({
+    Name = "skript hub by lulaslollipop",
+    Content = "time to eat some lollypops🍭😋 enjoy",
+    Image = "rbxassetid://4483345998",
+    Time = 12
+})
+-- OTHERS/FE
+local FeTab = Window:MakeTab({
+    Name = "FE/Other",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+local Section = FeTab:AddSection({
+    Name = "Others"
+})
+FeTab:AddButton({
+    Name = "Kamera Slider",
+    Callback = function()-- FE KAMERA SLIDER SKRIPT
+loadstring(game:HttpGet("https://raw.githubusercontent.com/rouxhaver/scripts-2/main/Camera%20Sliders.lua"))()
+    end
+})
+FeTab:AddButton({
+    Name = "Universal Spy Gui",
+    Callback = function()-- universal spy gui
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MichaelScripter/MiniScript/main/Spy gui.lua"))()
+    end
+})
+
+local Section = FeTab:AddSection({
+    Name = "FE Skripts"
+})
+FeTab:AddButton({
+    Name = "FE Time Reverse",
+    Callback = function()local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/Revenant", true))()
+Library.DefaultColor = Color3.fromRGB(0,255,0)
+Library:Notification({
+    Text = "provided by lulaslollipop",
+    Duration = 3
+})
+wait (2)
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/Revenant", true))()
+Library.DefaultColor = Color3.fromRGB(0,255,0)
+Library:Notification({
+    Text = "SKRIPT EXEKUTED 🍭🍭🍭🍭",
+    Duration = 3
+})
+loadstring(game:HttpGet("https://raw.githubusercontent.com/0Ben1/fe./main/L"))()
+    end
+})
+--credits: Snip#3132
+-- Editted By Creo ^ Credits to creator above
+--Commands: move forward, -move backward, -move leftward, -move rightward, -shiftlock on, -shiftlock off, -stop moving, -dance, -dance1, -dance2, -dance3, -wave, -point, -laugh, -jump, -joke
+local chat = function(MSG) -- creo thing
+ game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(MSG, "All")
+end
+local keys = {
+ ["a"] = 0x41,
+ ["b"] = 0x42,
+ ["c"] = 0x43,
+ ["d"] = 0x44,
+ ["e"] = 0x45,
+ ["f"] = 0x46,
+ ["g"] = 0x47,
+ ["h"] = 0x48,
+ ["i"] = 0x49,
+ ["j"] = 0x4A,
+ ["k"] = 0x4B,
+ ["l"] = 0x4C,
+ ["m"] = 0x4D,
+ ["n"] = 0x4E,
+ ["o"] = 0x4F,
+ ["p"] = 0x50,
+ ["q"] = 0x51,
+ ["r"] = 0x52,
+ ["s"] = 0x53,
+ ["t"] = 0x54,
+ ["u"] = 0x55,
+ ["v"] = 0x56,
+ ["w"] = 0x57,
+ ["x"] = 0x58,
+ ["y"] = 0x59,
+ ["z"] = 0x5A,
+ ["0"] = 0x30,
+ ["1"] = 0x31,
+ ["2"] = 0x32,
+ ["3"] = 0x33,
+ ["4"] = 0x34,
+ ["5"] = 0x35,
+ ["6"] = 0x36,
+ ["7"] = 0x37,
+ ["8"] = 0x38,
+ ["9"] = 0x39,
+ ["+"] = 0xBB,
+ ["-"] = 0xBD,
+ [","] = 0xBC,
+ ["."] = 0xBE,
+ ["quote"] = 0xDE,
+ ["esc"] = 0x1B,
+ ["tab"] = 0x09,
+ ["caps"] = 0x14,
+ ["lshift"] = 0xA0,
+ ["rshift"] = 0xA1,
+ ["ctrl"] = 0x11,
+ ["lctrl"] = 0xA2,
+ ["rctrl"] = 0xA3,
+ ["lwin"] = 0x5B,
+ ["rwin"] = 0x5C,
+ ["alt"] = 0x12,
+ ["space"] = 0x20,
+ ["enter"] = 0x0D,
+ ["backspace"] = 0x08,
+ ["sshot"] = 0x2C,
+ ["scrolllock"] = 0x91,
+ ["pause"] = 0x13,
+ ["insert"] = 0x2D,
+ ["home"] = 0x24,
+ ["pgup"] = 0x21,
+ ["del"] = 0x2E,
+ ["end"] = 0x23,
+ ["pgdn"] = 0x22,
+ ["up_a"] = 0x26,
+ ["down_a"] = 0x28,
+ ["left_a"] = 0x25,
+ ["right_a"] = 0x27,
+ ["numlock"] = 0x90,
+ ["sleep"] = 0x5F,
+ ["n_0"] = 0x60,
+ ["n_1"] = 0x61,
+ ["n_2"] = 0x62,
+ ["n_3"] = 0x63,
+ ["n_4"] = 0x64,
+ ["n_5"] = 0x65,
+ ["n_6"] = 0x66,
+ ["n_7"] = 0x67,
+ ["n_8"] = 0x68,
+ ["n_9"] = 0x69,
+ ["v_mute"] = 0xAD,
+ ["v_up"] = 0xAF,
+ ["v_down"] = 0xAE,
+ ["next_t"] = 0xB0,
+ ["prev_t"] = 0xB1,
+ ["stop_t"] = 0xB2,
+ ["pause_t"] = 0xB3,
+ ["f1"] = 0x70,
+ ["f2"] = 0x71,
+ ["f3"] = 0x72,
+ ["f4"] = 0x73,
+ ["f5"] = 0x74,
+ ["f6"] = 0x75,
+ ["f7"] = 0x76,
+ ["f8"] = 0x77,
+ ["f9"] = 0x78,
+ ["f10"] = 0x79,
+ ["f11"] = 0x7A,
+ ["f12"] = 0x7B,
+}
+function hold(mousebutton)
+ if mousebutton == "left" then
+  mouse1down()
+ elseif mousebutton == "right" then
+  mouse2down()
+ end
+end
+function release(mousebutton)
+ if mousebutton == "left" then
+  mouse1up()
+ elseif mousebutton == "right" then
+  mouse2up()
+ end
+end
+function click(mousebutton)
+ if mousebutton == "left" then
+  mouse1click()
+ elseif mousebutton == "right" then
+  mouse2click()
+ end
+end
+function move(x,y)
+ mousemoveabs(x,y)
+end
+function scroll(p)
+ mousescroll(p)
+end
+function loopmove(x,y)
+ if canmove2 ~= false then
+  canmove1 = false
+  spawn(function()
+   local l
+   l = game:GetService("RunService").Heartbeat:Connect(function()
+    if canmove1 == true then
+     l:Disconnect()
+    end
+    wait()
+    move(x,y)
+   end)
+  end)
+ end
+end
+function breakmove()
+ canmove1 = false
+end
+local mouse = game:GetService("Players").LocalPlayer:GetMouse()
+canmove2 = true
+function togglemove()
+ if canmove1 ~= false then
+  if canmove2 == false then
+   canmove2 = true
+  elseif canmove2 == true then
+   canmove2 = false
+   mx = mouse.X
+   my = mouse.Y
+   spawn(function()
+    local l
+    l = game:GetService("RunService").Heartbeat:Connect(function()
+     if canmove2 == true then
+      l:Disconnect()
+     end
+     wait()
+     move(mx,my)
+    end)
+   end)
+  end
+ end
+end
+function type(string)
+ for _,char in pairs(string:split("")) do
+  wait(0.01)
+  if char == " " then
+   keypress(keys["space"])
+  else
+   if char:upper() == char and (char ~= "," and char ~= "." and char ~= "-" and char ~= "+" and char ~= "'" and char ~= '"' and char ~= "<" and char ~= ">" and char ~= "_" and char ~= "=") then
+    keypress(keys["lshift"])
+    keypress(keys[char:lower()])
+                keyrelease(keys["lshift"])
+   else
+    if char == "'" then
+     keyrelease(keys["caps"])
+     keyrelease(keys["lshift"])
+     keypress(keys["quote"])
+    elseif char == '"' then
+     keyrelease(keys["caps"])
+     keypress(keys["lshift"])
+     keypress(keys["quote"])
+     keyrelease(keys["lshift"])
+    elseif char == "<" then
+     keyrelease(keys["caps"])
+     keypress(keys["lshift"])
+     keypress(keys[","])
+     keyrelease(keys["lshift"])
+    elseif char == ">" then
+     keyrelease(keys["caps"])
+     keypress(keys["lshift"])
+     keypress(keys["."])
+     keyrelease(keys["lshift"])
+    elseif char == "_" then
+     keyrelease(keys["caps"])
+     keypress(keys["lshift"])
+     keypress(keys["-"])
+     keyrelease(keys["lshift"])
+    elseif char == "=" then
+     keyrelease(keys["caps"])
+     keypress(keys["lshift"])
+     keypress(keys["+"])
+     keyrelease(keys["lshift"])
+    else
+     keyrelease(keys["caps"])
+     keyrelease(keys["lshift"])
+     keypress(keys[char])
+    end
+   end
+  end
+ end
+end
+local chatEvents = game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents")
+local messageDoneFiltering = chatEvents:WaitForChild("OnMessageDoneFiltering")
+messageDoneFiltering.OnClientEvent:Connect(function(message)
+ local msg = message.Message or ""
+ 
+ 
+ 
+ print(msg)
+ local split = msg:split(" ")
+ if split[1] == ";ms" then
+  chat("".. split[2] .."")
+end
+ if msg:lower():sub(1,14) == ";yell" then
+  chat("OMG ITS LULASLOLLIPOP😍🍭")
+end
+ if msg:lower():sub(1,14) == ";murder" then
+  workspace:FindFirstChild(game.Players.LocalPlayer.Name).Humanoid.Health = 0
+  end
+  if msg:lower():sub(1,13) == ";moveup" then
+   keyrelease(keys["s"])
+   keypress(keys["w"])
+  end
+  if msg:lower():sub(1,14) == ";moveback" then
+   keyrelease(keys["w"])
+   keypress(keys["s"])
+  end
+  if msg:lower():sub(1,14) == ";moveleft" then
+   keyrelease(keys["d"])
+   keypress(keys["a"])
+  end
+  if msg:lower():sub(1,15) == ";moveright" then
+   keyrelease(keys["a"])
+   keypress(keys["d"])
+  end
+  if msg:lower():sub(1,13) == ";slon" then
+   keypress(keys["lshift"])
+   keyrelease(keys["lshift"])
+  end
+  if msg:lower():sub(1,14) == ";sloff" then
+   keypress(keys["lshift"])
+   keyrelease(keys["lshift"])
+  end
+  if msg:lower():sub(1,12) == ";stop" then
+   keyrelease(keys["w"])
+   keyrelease(keys["s"])
+   keyrelease(keys["a"])
+   keyrelease(keys["d"])
+  end
+  if msg:lower():sub(1,5) == ";wave" then
+   game.Players:Chat("/e wave")
+  end
+  if msg:lower():sub(1,6) == ";point" then
+   game.Players:Chat("/e point")
+  end
+  if msg:lower():sub(1,6) == ";laugh" then
+   game.Players:Chat("/e laugh")
+  end
+  if msg:lower():sub(1,6) == ";dance" then
+   game.Players:Chat("/e dance")
+  end
+  if msg:lower():sub(1,7) == ";dance1" then
+   game.Players:Chat("/e dance1")
+  end
+  if msg:lower():sub(1,7) == ";dance2" then
+   game.Players:Chat("/e dance2")
+  end
+  if msg:lower():sub(1,7) == ";dance3" then
+   game.Players:Chat("/e dance3")
+  end
+  if msg:lower():sub(1,12) == ";rotateleft" then
+   keyrelease(keys["right_a"])
+   keypress(keys["left_a"])
+  end
+  if msg:lower():sub(1,13) == ";rotateright" then
+   keyrelease(keys["left_a"])
+   keypress(keys["right_a"])
+  end
+  if msg:lower():sub(1,12) == ";rotatestop" then
+   keyrelease(keys["right_a"])
+   keyrelease(keys["left_a"])
+  end
+  if msg:lower():sub(1,5) == ";jamp" then
+   keypress(keys["space"])
+   wait(0.1)
+   keyrelease(keys["space"])
+  end
+ 
+end)
