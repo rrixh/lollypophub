@@ -308,6 +308,27 @@ while wait() do
 end
     end
 })
+
+local Section = GamesTab:AddSection({
+    Name = "KAT"
+  })
+
+GamesTab:AddButton({
+    Name = "KAT Aimbot",
+    Callback = function()
+pcall(function()-- aimbot kat
+loadstring(game:HttpGet("https://raw.githubusercontent.com/JNHHGaming/Kat12/main/Kat"))()
+end)
+      end
+})
+
+GamesTab:AddButton({
+    Name = "KAT GUI",
+    Callback = function()--kat gui
+loadstring(game:HttpGet("https://pastebin.com/raw/78kG7trR"))()
+    end
+})
+
 OrionLib:MakeNotification({
     Name = "skript hub by lulaslollipop",
     Content = "time to eat some lollypops🍭😋 enjoy",
@@ -321,23 +342,13 @@ local FeTab = Window:MakeTab({
     PremiumOnly = false
 })
 local Section = FeTab:AddSection({
-    Name = "Others"
+    Name = "FE"
 })
 FeTab:AddButton({
-    Name = "Kamera Slider",
+    Name = "FE Kamera Slider",
     Callback = function()-- FE KAMERA SLIDER SKRIPT
 loadstring(game:HttpGet("https://raw.githubusercontent.com/rouxhaver/scripts-2/main/Camera%20Sliders.lua"))()
     end
-})
-FeTab:AddButton({
-    Name = "Universal Spy Gui",
-    Callback = function()-- universal spy gui
-loadstring(game:HttpGet("https://raw.githubusercontent.com/MichaelScripter/MiniScript/main/Spy gui.lua"))()
-    end
-})
-
-local Section = FeTab:AddSection({
-    Name = "FE Skripts"
 })
 FeTab:AddButton({
     Name = "FE Time Reverse",
@@ -347,6 +358,17 @@ Library:Notification({
     Text = "provided by lulaslollipop",
     Duration = 3
 })
+
+local Section = FeTab:AddSection({
+    Name = "Others"
+})
+FeTab:AddButton({
+    Name = "Universal Spy Gui",
+    Callback = function()-- universal spy gui
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MichaelScripter/MiniScript/main/Spy gui.lua"))()
+    end
+})
+
 wait (2)
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/Revenant", true))()
 Library.DefaultColor = Color3.fromRGB(0,255,0)
@@ -357,9 +379,7 @@ Library:Notification({
 loadstring(game:HttpGet("https://raw.githubusercontent.com/0Ben1/fe./main/L"))()
     end
 })
---credits: Snip#3132
--- Editted By Creo ^ Credits to creator above
---Commands: move forward, -move backward, -move leftward, -move rightward, -shiftlock on, -shiftlock off, -stop moving, -dance, -dance1, -dance2, -dance3, -wave, -point, -laugh, -jump, -joke
+
 local chat = function(MSG) -- creo thing
  game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(MSG, "All")
 end
