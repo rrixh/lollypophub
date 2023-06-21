@@ -46,14 +46,18 @@ SkriptsTab:AddButton({
     end
 })
 local Section = SkriptsTab:AddSection({
-    Name = "Mobile Keyboard"
+    Name = "Universal Keyboard GUI"
 })
 SkriptsTab:AddButton({
-    Name = "press",
-    Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+    Name = "EXEKUTE",
+    Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/BatuKvi123/Keyboardv3/main/mobKeyboard"))()
     end
 })
+
+
+
 -- ADMIN SKRIPTS
+
 local AdminTab = Window:MakeTab({
     Name = "Admin",
     Icon = "rbxassetid://4483345998",
@@ -239,7 +243,10 @@ ToolsTab:AddButton({
 loadstring(game:HttpGet(("https://pastebin.com/raw/YNVbeqPy")))()
       end
 })
+
+
 -- HUBS & GUIS
+
 local HubsTab = Window:MakeTab({
     Name = "HUBS & GUIS",
     Icon = "rbxassetid://4483345998",
@@ -263,7 +270,16 @@ HubsTab:AddButton({
 loadstring(game:HttpGet("https://pastebin.com/raw/zzYSdwhk", true))()
       end
 })
+HubsTab:AddButton({
+    Name = "SpamHub",
+    Callback = function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/ColdStep2/Chatdestroyer-Hub-V1/main/Chatdestroyer%20Hub%20V1'),true))()
+      end
+})
+
+
 -- GAMES
+
 local GamesTab = Window:MakeTab({
     Name = "Games",
     Icon = "rbxassetid://4483345998",
