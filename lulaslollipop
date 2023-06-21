@@ -27,6 +27,16 @@ SkriptsTab:AddButton({
     Callback = function()loadstring(game:HttpGet("https://pastebin.com/raw/R5YR13pG"))()
     end
 })
+
+SkriptsTab:AddButton({
+    Name = "Universal Aimbot",
+    Callback = function()
+pcall(function()-- AIMBOT by me
+loadstring(game:HttpGet("https://textbin.net/raw/uv6wy7lbdb"))()
+end)
+      end
+})
+
 local Section = SkriptsTab:AddSection({
     Name = "Anti-lag"
 })
@@ -327,17 +337,7 @@ end
 
 local Section = GamesTab:AddSection({
     Name = "KAT"
-  })
-
-GamesTab:AddButton({
-    Name = "KAT Aimbot",
-    Callback = function()
-pcall(function()-- aimbot kat
-loadstring(game:HttpGet("https://raw.githubusercontent.com/JNHHGaming/Kat12/main/Kat"))()
-end)
-      end
 })
-
 GamesTab:AddButton({
     Name = "KAT GUI",
     Callback = function()--kat gui
