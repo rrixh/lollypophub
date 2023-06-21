@@ -23,7 +23,7 @@ SkriptsTab:AddButton({
     end
 })
 SkriptsTab:AddButton({
-    Name = "Infinite Sprint (99% fail)",
+    Name = "Parkour Sprint",
     Callback = function()loadstring(game:HttpGet("https://pastebin.com/raw/R5YR13pG"))()
     end
 })
