@@ -387,16 +387,6 @@ local FeTab = Window:MakeTab({
 })
 
 local Section = FeTab:AddSection({
-    Name = "Requires Hats"
-})
-
-FeTab:AddButton({
-    Name = "FE Fish",
-    Callback = function()loadstring(game:HttpGet(('https://pastefy.app/yrp6En96/raw'),true))()
-    end
-})
-
-local Section = FeTab:AddSection({
     Name = "FE No Hats Required"
 })
 
