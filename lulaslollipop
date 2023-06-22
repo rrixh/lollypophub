@@ -1,4 +1,4 @@
--- ORION LOLLYPOP FM
+-- ORION LOLLYPOP FM (399 MOT)
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "🍭 Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 -- SKRIPTS 
@@ -60,7 +60,30 @@ local Section = SkriptsTab:AddSection({
 })
 SkriptsTab:AddButton({
     Name = "EXEKUTE",
-    Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/BatuKvi123/Keyboardv3/main/mobKeyboard"))()
+    Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+    end
+})
+
+local Section = SkriptsTab:AddSection({
+    Name = "Humanoid"
+})
+local Section = SkriptsTab:AddSection({
+    Name = "R15 games only"
+})
+
+SkriptsTab:AddButton({
+    Name = "R15 to R6",
+    Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/Imagnir/r6_anims_for_r15/main/r6_anims.lua", true))()
+    end
+})
+
+local Section = SkriptsTab:AddSection({
+    Name = "Player Animations"
+})
+
+SkriptsTab:AddButton({
+    Name = "Energyze Animations (R15 & R6)",
+    Callback = function()loadstring(game:HttpGet(('https://pastebin.com/raw/1p6xnBNf'),true))()
     end
 })
 
@@ -101,7 +124,7 @@ local FunTab = Window:MakeTab({
     PremiumOnly = false
   })
 FunTab:AddButton({
-    Name = "FE Portal Gun",
+    Name = "Portal Gun",
     Callback = function()loadstring(game:HttpGet("https://pastebin.com/raw/H9B4aGij"))()
     end
 })
@@ -109,7 +132,7 @@ local Section = FunTab:AddSection({
     Name = "Animations" 
 })
 FunTab:AddButton({
-    Name = "Lolly Animations (R6 only)",
+    Name = "Lolly Animations V2 (R6 & R15)",
     Callback = function()loadstring(game:HttpGet('https://raw.githubusercontent.com/yeerma/1/main/the_greatest_script_ever_made'))()
     end
 })
@@ -127,7 +150,7 @@ FunTab:AddButton({
     end
 })
 FunTab:AddButton({
-    Name = "RAINBOW XHAT (enables xhat bubbles too)",
+    Name = "Xhat Bubble Enabled & See Msgs From A Distanxe (Rainbow)",
     Callback = function()--enables bubble chat also
 textcolour = Color3.new(0,0,0)
 game:GetService("Chat").BubbleChatEnabled = true
@@ -198,7 +221,7 @@ end
     end
 })
 local Section = FunTab:AddSection({
-    Name = "Humanoid Funktions"
+    Name = "Fun Humanoid Funktions"
 })
 FunTab:AddButton({
     Name = "Destroy Body",
@@ -351,48 +374,165 @@ OrionLib:MakeNotification({
     Image = "rbxassetid://4483345998",
     Time = 12
 })
--- OTHERS/FE
+
+
+
+-- FE SKRIPTS
+
+
 local FeTab = Window:MakeTab({
-    Name = "FE/Other",
+    Name = "FE",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
+
 local Section = FeTab:AddSection({
-    Name = "FE"
+    Name = "Requires Hats"
 })
+
+FeTab:AddButton({
+    Name = "FE Fish",
+    Callback = function()loadstring(game:HttpGet(('https://pastefy.app/yrp6En96/raw'),true))()
+    end
+})
+
+local Section = FeTab:AddSection({
+    Name = "FE No Hats Required"
+})
+
+FeTab:AddButton({
+    Name = "FE Avatar Kreator",
+    Callback = function()loadstring(game:HttpGet("https://pastebin.com/raw/TTQn3RDk"))()
+    end
+})
+
 FeTab:AddButton({
     Name = "FE Kamera Slider",
     Callback = function()-- FE KAMERA SLIDER SKRIPT
 loadstring(game:HttpGet("https://raw.githubusercontent.com/rouxhaver/scripts-2/main/Camera%20Sliders.lua"))()
     end
 })
+
 FeTab:AddButton({
     Name = "FE Time Reverse",
-    Callback = function()local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/Revenant", true))()
+    Callback = function()-- FE TIME REVERSE
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/Revenant", true))()
 Library.DefaultColor = Color3.fromRGB(0,255,0)
+
 Library:Notification({
     Text = "provided by lulaslollipop",
     Duration = 3
 })
 
-local Section = FeTab:AddSection({
+wait (2)
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/Revenant", true))()
+Library.DefaultColor = Color3.fromRGB(0,255,0)
+
+Library:Notification({
+    Text = "SKRIPT EXEKUTED!🍭🍭🍭",
+    Duration = 3
+})
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/0Ben1/fe./main/L"))()
+    end
+})--notifs/fe time reverse above
+
+FeTab:AddButton({
+    Name = "FE Player Lifter",
+    Callback = function()--Made by rouxhaver
+--super janky
+
+player = game:GetService("Players").LocalPlayer
+mouse = player:GetMouse()
+camera = workspace.CurrentCamera
+ts = game:GetService("TweenService")
+
+function createtween(part, cframe,ttime)
+ local tweeninfo = TweenInfo.new(ttime)
+ tween = ts:Create(part, tweeninfo, {CFrame = cframe})
+ tween:Play()
+ tween.Completed:Wait()
+end
+
+outline = Instance.new("Highlight")
+
+target = nil
+
+mouse.Button1Up:Connect(function()
+ if mouse.Target then
+  local model = mouse.Target:FindFirstAncestorOfClass("Model")
+  if model and model:FindFirstChild("Humanoid") then do
+    camera.CameraSubject = model.Humanoid
+    target = model
+   end else
+   outline.Parent = nil
+  end
+ end
+end)
+
+game:GetService("RunService").RenderStepped:Connect(function()
+ if player.Character:FindFirstChild("HumanoidRootPart") then
+  player.Character.HumanoidRootPart.Velocity = Vector3.new(0,0,0)
+  if target and target:FindFirstChild("HumanoidRootPart") then
+   if target.HumanoidRootPart.CFrame.Y + 20 < player.Character.HumanoidRootPart.CFrame.Y then
+    tween:Cancel()
+   end
+  end
+ end
+ if mouse.Target then
+  local model = mouse.Target:FindFirstAncestorOfClass("Model")
+  if model and model:FindFirstChild("Humanoid") then do
+    outline.Parent = model
+   end else
+   outline.Parent = nil
+  end
+ end
+end)
+
+while task.wait() do
+ if target ~= nil and target:FindFirstAncestorOfClass("Workspace") and target ~= player.Character and player.Character:FindFirstChild("HumanoidRootPart") and target:FindFirstChild("HumanoidRootPart") then
+  character = player.Character
+  hrp = character.HumanoidRootPart
+  thrp = target.HumanoidRootPart
+  hrp.CFrame = thrp.CFrame * CFrame.Angles(math.rad(90),0,0) + thrp.CFrame.UpVector * -10
+ end
+ if target ~= nil and target:FindFirstAncestorOfClass("Workspace") and target ~= player.Character and player.Character:FindFirstChild("HumanoidRootPart") and target:FindFirstChild("HumanoidRootPart") then
+  character = player.Character
+  hrp = character.HumanoidRootPart
+  thrp = target.HumanoidRootPart
+  rot = thrp.CFrame*CFrame.Angles(math.rad(25),math.rad(25),math.rad(25))
+  createtween(hrp, thrp.CFrame * CFrame.Angles(math.rad(90),0,0) + thrp.CFrame.UpVector * 1000000, 100000)
+ end
+end
+    end
+})
+
+
+
+
+-- OTHERS
+
+local OthersTab = Window:MakeTab({
+    Name = "Others",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Section = OthersTab:AddSection({
     Name = "Others"
 })
-FeTab:AddButton({
-    Name = "Universal Spy Gui",
+
+OthersTab:AddButton({
+    Name = "Universal Spy GUI",
     Callback = function()-- universal spy gui
 loadstring(game:HttpGet("https://raw.githubusercontent.com/MichaelScripter/MiniScript/main/Spy gui.lua"))()
     end
 })
 
-wait (2)
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/Revenant", true))()
-Library.DefaultColor = Color3.fromRGB(0,255,0)
-Library:Notification({
-    Text = "SKRIPT EXEKUTED 🍭🍭🍭🍭",
-    Duration = 3
-})
-loadstring(game:HttpGet("https://raw.githubusercontent.com/0Ben1/fe./main/L"))()
+OthersTab:AddButton({
+    Name = "Mimik GUI",
+    Callback = function()loadstring(game:HttpGet('https://raw.githubusercontent.com/0Ben1/fe./2520c121ab919b2b9697ab5c70797dcfdaa5db43/Ohio'))()
     end
 })
 
