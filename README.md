@@ -1,7 +1,8 @@
 -- Gui to Lua LOLLYPOPHUB
 -- Version: 6.9
 -- Instanxes:
-loadstring(game:HttpGet("https://pastebin.com/raw/uNb6892M",true))()
+pcall(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/uNb6892M",true))(); end);
 --loadstring(gameLoaded:true)--
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/Revenant", true))()
 Library.DefaultColor = Color3.fromRGB(50,205,50)
@@ -26,7 +27,7 @@ Text = "lulaslollipop🍭",
 })
 
 
-local Library = loadstring(game:HttpGet("https://pastecode.dev/raw/MsVeci5gQG/kavomobileUi",true))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/rrixh/uwuware/main/lib/kavomobile.jpg",true))();
 local Window = Library.CreateLib("Lollypop Hub🍭 | V6.9","BloodTheme")
 
 ---//yum lollypop hub\\--
